@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View PDF</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="{{ url_for('static', filename='Carte_de_visite.pdf') }}" frameborder="0"></iframe>
+</body>
+</html>
